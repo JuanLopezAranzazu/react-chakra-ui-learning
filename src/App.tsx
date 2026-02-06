@@ -1,14 +1,12 @@
-import { Button, HStack  } from "@chakra-ui/react"
+import { Box } from "@chakra-ui/react";
+import { Toaster } from "@/components/ui/toaster";
+import { UsersPage } from "@/pages/UsersPage";
 
-function App() {
-
+export default function App() {
   return (
-    <HStack>
-      <Button>Click me</Button>
-      <Button>Click me</Button>
-
-    </HStack>
-  )
+    <Box minH="100vh">
+      <Toaster />
+      <UsersPage />
+    </Box>
+  );
 }
-
-export default App
